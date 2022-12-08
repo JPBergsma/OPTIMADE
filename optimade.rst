@@ -2830,8 +2830,10 @@ reference_structure
 - **Requirements/Conventions**:
 
   - Each trajectory MUST have a :property:`reference_structure`.
-  - This :property:`reference_structure` MAY be one of the frames from the trajectory, in that case the `reference_frame`_ field SHOULD specify which frame has been used.
-  - This reference frame has the same properties outlined in `Structures Entries`_, namely:
+  - This :property:`reference_structure` MAY be one of the frames from the trajectory, in that case the `reference_frame`_ field MUST specify which frame has been used.
+  - Queries on the trajectories MUST be done on the information supplied in the :property:`reference_structure` when the queried property is in the :property:`reference_structure`.
+    For example, the query : http://example.com/optimade/v1/trajectories?filter=nelements=2 would use the `nelements`_ property within the reference_structure.
+  - This reference frame has the same properties as the 
 
     - `elements`_
     - `nelements`_
