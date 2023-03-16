@@ -1194,7 +1194,7 @@ Example (note: the description strings have been wrapped for readability only):
               3
             ],
             "x-optimade-property": {
-               "property-format": "1.2"
+              "property-format": "1.2"
             },
             "x-optimade-unit": "dimensionless",
             "x-optimade-implementation": {
